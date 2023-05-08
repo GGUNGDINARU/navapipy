@@ -9,7 +9,7 @@ client_id = "yBeCYOpJm4z0LP2glWvo"
 client_secret = "1GxLsJ05tP"
 
 print('꿍디의 블로그 검색기 입니다.')
-keyword = input('검색어를 입력하세요! :')
+keyword = input('검색어를 입력하세요! : ')
 
 encText = urllib.parse.quote(keyword)
 url = "https://openapi.naver.com/v1/search/blog?query=" + encText # JSON 결과
