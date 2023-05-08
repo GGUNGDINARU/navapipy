@@ -8,8 +8,8 @@ import random
 client_id = "yBeCYOpJm4z0LP2glWvo"
 client_secret = "1GxLsJ05tP"
 
-print('블로그 검색기 입니다.')
-keyword = input('검색어를 입력하세요 :')
+print('꿍디의 블로그 검색기 입니다.')
+keyword = input('검색어를 입력하세요! :')
 
 encText = urllib.parse.quote(keyword)
 url = "https://openapi.naver.com/v1/search/blog?query=" + encText # JSON 결과
@@ -31,7 +31,7 @@ if(rescode==200):
         print('블로그 제목 :', item['title']) # 딕셔너리 중에서 타이틀로 되어있는 데이터를 출력
         print('블로그 링크 :', item['link']) #이건 링크 
 
-    input('이중에 하나를 추천 받고 싶으면 아무 키나 입력하세요.')
+    input('이중에 하나를 추천 받고 싶으면 아무 키나 입력하세요!')
     recom = random.choice(data['items'])
     print(recom['title'])
     print(recom['link'])
