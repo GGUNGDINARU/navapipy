@@ -5,13 +5,13 @@ import json
 import random
 
 def get_blog_api(keyword):
-    #전달할 데이터 리스트
-    blog_list = data['items']
+    # 전달할 데이터 리스트
+    blog_list = []
     client_id = "yBeCYOpJm4z0LP2glWvo"
     client_secret = "1GxLsJ05tP"
 
-    #print('꿍디의 블로그 검색기 입니다.')
-    #keyword = input('검색어를 입력하세요! : ')
+    # print('꿍디의 블로그 검색기 입니다!')
+    # keyword = input('검색어를 입력하세요! : ')
 
     encText = urllib.parse.quote(keyword)
     url = "https://openapi.naver.com/v1/search/blog?query=" + encText # JSON 결과
@@ -36,8 +36,6 @@ def get_blog_api(keyword):
         #     print('블로그 링크:', item['link'])
 
         # input('이중에 하나를 추천 받고 싶으면 아무키나 입력하세요.')
-        # print('랜덤으로 하나만 똭~ 나오게 해보세요')
-        # print('AI가 추천한 블로그')
         # dict_item = random.choice(data['items'])
         # print('블로그 제목:', dict_item['title'])
         # print('블로그 링크:', dict_item['link'])
@@ -45,5 +43,4 @@ def get_blog_api(keyword):
         print("Error Code:" + rescode)
         
     return blog_list
-
     
