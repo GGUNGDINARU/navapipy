@@ -8,7 +8,7 @@ def get_blog_api(keyword):
     # 전달할 데이터 리스트
     blog_list = []
     client_id = "yBeCYOpJm4z0LP2glWvo"
-    client_secret = "1GxLsJ05tP"
+    client_secret = 1GxLsJ05tP""
 
     # print('꿍디의 블로그 검색기 입니다!')
     # keyword = input('검색어를 입력하세요! : ')
